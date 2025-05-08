@@ -1,9 +1,14 @@
 {
+  "name": "salx",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "tailwindcss -i ./css/app.css -o ../priv/static/assets/app.css --minify"
+  },
   "dependencies": {
     "@emoji-mart/data": "^1.2.1",
     "emoji-mart": "^5.6.0"
   },
-  "scripts": {
-    "deploy": "tailwindcss -i ./css/app.css -o ../priv/static/assets/app.css --minify"
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
