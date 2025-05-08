@@ -17,7 +17,7 @@ if config_env() == :prod do
   config :salx, Salx.Repo,
     url: database_url,
     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
-    ssl: [verify, verify_peer],
+    ssl: [verify: :verify_none],
     socket_options: maybe_ipv6
 
   secret_key_base =
